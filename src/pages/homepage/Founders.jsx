@@ -1,6 +1,5 @@
 import React from "react";
 import image from "../icons/founders/image.png";
-// Make sure you have Prompt and Radio Canada fonts loaded in your project for best results.
 
 const founders = [
   {
