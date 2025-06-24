@@ -57,11 +57,10 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <input
-                  type="text"
+                <textarea
                   placeholder="Message"
-                  className="p-4 text-start rounded-lg bg-[#171618] text-gray-500 w-full pb-20"
-                />
+                  className="p-4 text-start rounded-lg bg-[#171618] text-gray-500 w-full h-40 resize-none overflow-y-auto"
+                ></textarea>
               </div>
               <button className="flex gap-2 font-medium justify-center items-center w-full bg-[linear-gradient(90deg,#763AF5_0%,#A604F2_117.18%)] text-white py-2 rounded-lg">
                 Send{" "}
