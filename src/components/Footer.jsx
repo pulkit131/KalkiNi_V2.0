@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className=" bg-black text-white py-12 px-6">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row gap-8 mb-12">
+        <div className="flex flex-col lg:flex-row gap-8 mb-12">
           <div className="flex flex-row gap-8">
             <div className="flex-1">
               <h3 className="text-lg font-semibold mb-4">Quick Access</h3>
@@ -145,7 +145,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="flex-1 md:flex-2 md:ml-12">
+          <div className="flex-1 md:flex-2 lg:ml-12">
             <div className="mb-4">
               <h2 className="text-2xl font-bold mb-2">KalkiNI</h2>
               <p className="text-sm text-gray-300 leading-relaxed">
@@ -165,7 +165,7 @@ const Footer = () => {
               © 2024 KalkiNI™ is a registered trademark. All Rights Reserved.
             </p>
           </div>
-          <div className="flex space-x-4 md:justify-end items-center ">
+          <div className="flex space-x-4 md:justify-end justify-center items-center ">
             <button className="text-gray-400 hover:text-white text-sm transition-colors">
               En
             </button>
