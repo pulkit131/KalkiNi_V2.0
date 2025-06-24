@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'sans': ['Prompt', 'ui-sans-serif', 'system-ui'],
+      },
       animation: {
         'float-1': 'float 15s infinite linear',
         'float-2': 'float 18s infinite linear -5s',

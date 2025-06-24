@@ -4,63 +4,76 @@ import { FacebookIcon, Globe, MailIcon, PhoneCallIcon } from "lucide-react";
 import facebook from "../icons/homepage/facebook.png";
 import xicon from "../icons/homepage/x-icon.png";
 import linkedin from "../icons/homepage/linkedin.png";
+import rocket from "../icons/homepage/rocket.png";
 
 const Contact = () => {
   return (
     <div className="relative min-h-screen w-full">
       <Background />
       <div className="relative z-10 flex flex-col items-center p-8 min-h-screen">
-        <h1 className="font-bold text-7xl mt-20  text-white">Contact Us</h1>
-        <p className="text-gray-500 mt-4 font-medium">
+        <h1 className="font-bold text-4xl sm:text-7xl mt-20  text-white">
+          Contact Us
+        </h1>
+        <p className="text-gray-500 mt-4 font-medium md:text-lg text-sm">
           Reach out, and let's create a universe of possibilities together!
         </p>
         <div
           id="contact-container"
-          className="flex flex-col justify-center md:flex-row h-auto max-w-5xl gap-20 bg-black mt-8 rounded-xl py-20 px-16"
+          className="flex flex-col mx-auto justify-center md:flex-row h-auto max-w-5xl gap-8 md:gap-20 bg-black mt-8 rounded-xl py-8 px-8 md:py-20 md:px-16"
         >
           <div id="contact-form" className="mx-auto">
-            <h1 className="text-4xl font-bold text-white">Send us a message</h1>
+            <h1 className="text-4xl font-medium text-white md:items-start items-centers">
+              Send us a message
+            </h1>
             <form className="flex flex-col mt-8 gap-4">
-              <div className="flex flex-row gap-2">
+              <div className="flex flex-col sm:flex-row gap-4 md:gap-2">
                 <div className="">
                   <input
                     type="text"
-                    value="First Name"
-                    className="p-4 rounded-lg bg-[#171618] text-gray-500"
+                    placeholder="First Name"
+                    className="p-4 rounded-lg bg-[#171618] text-gray-500 w-full"
                   />
                 </div>
                 <div>
                   <input
                     type="text"
-                    value="Last Name"
-                    className="p-4 rounded-lg bg-[#171618] text-gray-500"
+                    placeholder="Last Name"
+                    className="p-4 rounded-lg bg-[#171618] text-gray-500 w-full"
                   />
                 </div>
               </div>
               <div>
                 <input
                   type="mail"
-                  value="Email"
+                  placeholder="Email"
                   className="p-4 rounded-lg bg-[#171618] text-gray-500 w-full"
                 />
               </div>
               <div>
                 <input
                   type="tel"
-                  value="Phone no."
+                  placeholder="Phone no."
                   className="p-4 rounded-lg bg-[#171618] text-gray-500 w-full"
                 />
               </div>
               <div>
                 <input
                   type="text"
-                  value="Message"
+                  placeholder="Message"
                   className="p-4 text-start rounded-lg bg-[#171618] text-gray-500 w-full pb-20"
                 />
               </div>
+              <button className="flex gap-2 font-medium justify-center items-center w-full bg-[linear-gradient(90deg,#763AF5_0%,#A604F2_117.18%)] text-white py-2 rounded-lg">
+                Send{" "}
+                <img
+                  src={rocket}
+                  alt="rocket"
+                  className="mix-blend-screen w-[25px] h-[12px] border-none"
+                />
+              </button>
             </form>
           </div>
-          <div id="contact-info">
+          <div id="contact-info" className="px-4">
             <h1 className="font-medium text-4xl text-white">
               Contact Information
             </h1>
